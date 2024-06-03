@@ -1,0 +1,15 @@
+{
+  "name": "monorepo",
+  "packageManager": "yarn@4.2.2",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "dev:system": "yarn workspace system dev",
+    "dev:portal": "yarn workspace portal dev",
+    "dev:concierge": "yarn workspace concierge dev"
+  }
+}
